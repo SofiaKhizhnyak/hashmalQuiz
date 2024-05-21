@@ -136,9 +136,9 @@ function QuizProvider({ children }) {
       console.error("Fetching categories error:", err);
       dispatch({ type: "dataFailed" });
     }
-  };
 
-  // ...
+    fetchCategories();
+  };
 
   if (selectedCategory !== null) {
     const fetchQuestions = async () => {
