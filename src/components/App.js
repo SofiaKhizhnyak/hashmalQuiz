@@ -1,3 +1,4 @@
+import React from "react";
 import Header from "./Header";
 import Main from "./Main";
 import Loader from "./Loader";
@@ -10,7 +11,6 @@ import FinishScreen from "./FinishScreen";
 import Timer from "./Timer";
 import Footer from "./Footer";
 import { useQuiz } from "../contexts/QuizContext";
-import React from "react";
 
 export default function App() {
   const { status } = useQuiz();
