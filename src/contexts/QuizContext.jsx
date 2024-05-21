@@ -122,27 +122,47 @@ function QuizProvider({ children }) {
     0
   );
 
-  /* useEffect(function () {
-    fetch(`http://localhost:9000/questions`)
-      .then((res) => res.json())
-      .then((data) => dispatch({ type: "dataReceived", payload: data }))
-      .catch((err) => dispatch({ type: "dataFailed" }));
-  }, []); */
-
-  useEffect(
-    function () {
-      if (selectedCategory !== null) {
-        // Fetch data only if category is selected
-        fetch(`http://localhost:9000/questions/`)
-          .then((res) => res.json())
-          .then((data) => {
-            dispatch({ type: "dataReceived", payload: data[selectedCategory] });
-          })
-          .catch((err) => dispatch({ type: "dataFailed" }));
+  const fetchCategories = async () => {
+    try {
+      console.log("Fetching categories");
+      const res = await fetch(`http://localhost:9000/questions/`);
+      if (!res.ok) {
+        throw new Error("Network response was not ok");
       }
-    },
-    [selectedCategory]
-  );
+      const data = await res.json();
+      console.log("Fetched categories:", data);
+      dispatch({ type: "categoriesReceived", payload: data });
+    } catch (err) {
+      console.error("Fetching categories error:", err);
+      dispatch({ type: "dataFailed" });
+    }
+  };
+
+  // ...
+
+  if (selectedCategory !== null) {
+    const fetchQuestions = async () => {
+      try {
+        console.log(`Fetching questions for category ${selectedCategory}`);
+        const res = await fetch(`http://localhost:9000/questions/`);
+        if (!res.ok) {
+          throw new Error("Network response was not ok");
+        }
+        const data = await res.json();
+        console.log("Fetched data:", data);
+        if (data[selectedCategory]) {
+          dispatch({ type: "dataReceived", payload: data[selectedCategory] });
+        } else {
+          throw new Error(`No data found for category ${selectedCategory}`);
+        }
+      } catch (err) {
+        console.error("Fetching error:", err);
+        dispatch({ type: "dataFailed" });
+      }
+    };
+
+    fetchQuestions();
+  }
 
   return (
     <QuizContext.Provider
