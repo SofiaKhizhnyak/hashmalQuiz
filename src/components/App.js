@@ -8,7 +8,7 @@ import Question from "./Question";
 import NextButton from "./NextButton";
 import Progress from "./Progress";
 import FinishScreen from "./FinishScreen";
-import Timer from "./Timer";
+
 import Footer from "./Footer";
 import { useQuiz } from "../contexts/QuizContext";
 
@@ -26,7 +26,6 @@ export default function App() {
             <Progress />
             <Question />
             <Footer>
-              {/* <Timer /> */}
               <NextButton />
             </Footer>
           </>
