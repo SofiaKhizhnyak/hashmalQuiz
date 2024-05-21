@@ -1,15 +1,15 @@
-import Header from "./components/Header";
-import Main from "./components/Main";
-import Loader from "./components/Loader";
-import Error from "./components/Error";
-import StartScreen from "./components/StartScreen";
-import Question from "./components/Question";
-import NextButton from "./components/NextButton";
-import Progress from "./components/Progress";
-import FinishScreen from "./components/FinishScreen";
-import Timer from "./components/Timer";
-import Footer from "./components/Footer";
-import { useQuiz } from "./contexts/QuizContext";
+import Header from "./Header";
+import Main from "./Main";
+import Loader from "./Loader";
+import Error from "./Error";
+import StartScreen from "./StartScreen";
+import Question from "./Question";
+import NextButton from "./NextButton";
+import Progress from "./Progress";
+import FinishScreen from "./FinishScreen";
+import Timer from "./Timer";
+import Footer from "./Footer";
+import { useQuiz } from "../contexts/QuizContext";
 import React from "react";
 
 export default function App() {
