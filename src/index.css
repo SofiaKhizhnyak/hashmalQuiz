@@ -28,6 +28,7 @@ body {
   color: var(--color-light);
   background-color: var(--color-darkest);
   padding: 3.2rem;
+  font-size: 1.6rem;
 }
 
 .app {
@@ -287,4 +288,34 @@ progress {
   border: 2px solid var(--color-accent);
   color: var(--color-dark);
   float: right;
+}
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .main {
+    width: 90%;
+  }
+
+  .app-header {
+    width: 100%;
+  }
+
+  .category-buttons {
+    flex-wrap: wrap;
+  }
+
+  .category-buttons .btn-ui {
+    flex-basis: calc(33.333% - 10px);
+    min-width: auto;
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main {
+    width: 100%;
+  }
+
+  .category-buttons .btn-ui {
+    flex-basis: calc(50% - 10px);
+  }
 }
