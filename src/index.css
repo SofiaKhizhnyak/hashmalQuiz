@@ -318,4 +318,31 @@ progress {
   .category-buttons .btn-ui {
     flex-basis: calc(50% - 10px);
   }
+  h1 {
+    font-family: "Codystar";
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+
+  h4 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 2.4rem;
+  }
+  img {
+    width: 6rem;
+  }
+  .btn-option {
+    font-size: 1.2rem;
+  }
 }
