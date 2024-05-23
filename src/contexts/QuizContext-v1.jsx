@@ -1,4 +1,4 @@
-import { createContext, useEffect, useContext, useReducer } from "react";
+import React, { createContext, useEffect, useContext, useReducer } from "react";
 
 const QuizContext = createContext();
 
@@ -12,51 +12,11 @@ const initialState = {
   points: 0,
   highscore: 0,
   secondsRemaining: null,
-  selectedCategory: 0,
+  selectedCategory: null,
+  categories: [],
 };
 
 function reducer(state, action) {
-  /* switch (action.type) {
-    case "dataReceived":
-      return { ...state, questions: action.payload, status: "ready" };
-    case "dataFailed":
-      return { ...state, status: "error" };
-    case "start":
-      return {
-        ...state,
-        status: "active",
-        secondsRemaining: state.questions.length * SECS_PER_QUESTION,
-      };
-    case "newAnswer":
-      const question = state.questions.at(state.index);
-      return {
-        ...state,
-        answer: action.payload,
-        points:
-          action.payload === question.correctOption
-            ? state.points + question.points
-            : state.points,
-      };
-    case "nextQuestion":
-      return { ...state, index: state.index + 1, answer: null };
-    case "finish":
-      return {
-        ...state,
-        status: "finished",
-        highscore:
-          state.points > state.highscore ? state.points : state.highscore,
-      };
-    case "restart":
-      return { ...initialState, questions: state.questions, status: "ready" };
-    case "tick":
-      return {
-        ...state,
-        secondsRemaining: state.secondsRemaining - 1,
-        status: state.secondsRemaining === 0 ? "finished" : state.status,
-      };
-    default:
-      throw new Error("Action unknown");
-  } */
   switch (action.type) {
     case "dataReceived":
       return { ...state, questions: action.payload, status: "ready" };
@@ -87,16 +47,26 @@ function reducer(state, action) {
         highscore:
           state.points > state.highscore ? state.points : state.highscore,
       };
-    case "restart":
-      return { ...initialState, questions: state.questions, status: "ready" };
+
     case "tick":
       return {
         ...state,
         secondsRemaining: state.secondsRemaining - 1,
-        /* status: state.secondsRemaining === 0 ? "finished" : state.status, */
       };
     case "selectCategory":
-      return { ...state, selectedCategory: action.payload }; // Set selected category
+      return { ...state, selectedCategory: action.payload };
+    case "categoriesReceived":
+      return {
+        ...state,
+        categories: action.payload,
+        status: "categoriesReady",
+      };
+    case "restart":
+      return {
+        ...initialState,
+        categories: state.categories,
+        status: "categoriesReady",
+      };
     default:
       throw new Error("Action unknown");
   }
@@ -113,6 +83,7 @@ function QuizProvider({ children }) {
       highscore,
       secondsRemaining,
       selectedCategory,
+      categories,
     },
     dispatch,
   ] = useReducer(reducer, initialState);
@@ -122,27 +93,51 @@ function QuizProvider({ children }) {
     0
   );
 
-  /* useEffect(function () {
-    fetch(`http://localhost:9000/questions`)
-      .then((res) => res.json())
-      .then((data) => dispatch({ type: "dataReceived", payload: data }))
-      .catch((err) => dispatch({ type: "dataFailed" }));
-  }, []); */
-
-  useEffect(
-    function () {
-      if (selectedCategory !== null) {
-        // Fetch data only if category is selected
-        fetch(`http://localhost:9000/questions/`)
-          .then((res) => res.json())
-          .then((data) => {
-            dispatch({ type: "dataReceived", payload: data[selectedCategory] });
-          })
-          .catch((err) => dispatch({ type: "dataFailed" }));
+  useEffect(() => {
+    const fetchCategories = async () => {
+      try {
+        console.log("Fetching categories");
+        const res = await fetch(`http://localhost:9000/questions/`);
+        if (!res.ok) {
+          throw new Error("Network response was not ok");
+        }
+        const data = await res.json();
+        console.log("Fetched categories:", data);
+        dispatch({ type: "categoriesReceived", payload: data });
+      } catch (err) {
+        console.error("Fetching categories error:", err);
+        dispatch({ type: "dataFailed" });
       }
-    },
-    [selectedCategory]
-  );
+    };
+
+    fetchCategories();
+  }, []);
+
+  useEffect(() => {
+    if (selectedCategory !== null) {
+      const fetchQuestions = async () => {
+        try {
+          console.log(`Fetching questions for category ${selectedCategory}`);
+          const res = await fetch(`http://localhost:9000/questions/`);
+          if (!res.ok) {
+            throw new Error("Network response was not ok");
+          }
+          const data = await res.json();
+          console.log("Fetched data:", data);
+          if (data[selectedCategory]) {
+            dispatch({ type: "dataReceived", payload: data[selectedCategory] });
+          } else {
+            throw new Error(`No data found for category ${selectedCategory}`);
+          }
+        } catch (err) {
+          console.error("Fetching error:", err);
+          dispatch({ type: "dataFailed" });
+        }
+      };
+
+      fetchQuestions();
+    }
+  }, [selectedCategory]);
 
   return (
     <QuizContext.Provider
@@ -154,10 +149,11 @@ function QuizProvider({ children }) {
         points,
         highscore,
         secondsRemaining,
-        numQuestions,
-        maxPossiblePoints,
         dispatch,
         selectedCategory,
+        categories,
+        numQuestions,
+        maxPossiblePoints,
       }}
     >
       {children}
