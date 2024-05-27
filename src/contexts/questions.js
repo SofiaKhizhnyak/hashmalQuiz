@@ -1187,8 +1187,13 @@ export const questionsData = [
     },
     {
       question: "לחישוב עוצמת הזרם במעגל חשמלי נשתמש בנוסחא",
-      num: "e7",
-      options: ["U=IΩ", "U=R/I"],
+      num: "ה7",
+      options: [
+        "https://i.ibb.co/7KYHkPr/7.png",
+        "https://i.ibb.co/71PWmTq/7.png",
+        "I = UR",
+        "https://i.ibb.co/pbY7t6T/7.png",
+      ],
       correctOption: 0,
       points: 1,
     },

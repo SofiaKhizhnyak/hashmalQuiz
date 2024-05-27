@@ -22,12 +22,25 @@ function Options({ question }) {
             disabled={hasAnswered}
             onClick={() => dispatch({ type: "newAnswer", payload: index })}
           >
-            {option}
+            {isValidImageUrl(option) ? (
+              <img
+                style={{ width: "48px", height: "35px" }}
+                src={option}
+                alt={`Option ${index}`}
+              />
+            ) : (
+              option
+            )}
           </button>
         ))}
       </div>
     </div>
   );
+}
+function isValidImageUrl(url) {
+  // This regex pattern checks if the URL ends with common image extensions
+  const imageExtensions = /\.(jpg|jpeg|png|gif)$/i;
+  return imageExtensions.test(url);
 }
 
 export default Options;
