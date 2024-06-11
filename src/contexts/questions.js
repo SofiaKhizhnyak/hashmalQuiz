@@ -1237,7 +1237,7 @@ export const questionsData = [
   [
     {
       question: "אנרגיה חשמלית היא",
-      num: "f1",
+      num: "1ו",
       options: [
         "היכולת לעשות עבודה חשמלית",
         "העבודה החשמלית המתבצעת ביחידת זמן",
@@ -1263,7 +1263,7 @@ export const questionsData = [
       question: "הנוסחא הנכונה לחשוב אנרגיה חשמלית היא",
       num: "f3",
       options: [" ", " ", " ", " "],
-      correctOption: 1,
+      correctOption: 0,
       points: 1,
     },
     {
@@ -1342,7 +1342,7 @@ export const questionsData = [
         "אין קשר בין הספק הנורה להתנגדות",
         "אף תשובה אחת מהנזכרות למעלה אינה נכונה",
       ],
-      correctOption: 1,
+      correctOption: 0,
       points: 1,
     },
     {
@@ -1391,7 +1391,7 @@ export const questionsData = [
         "הספק הצרכן יגדל פי ארבע",
         "הספק הצרכן יגדל פי שניים",
       ],
-      correctOption: 0,
+      correctOption: 3,
       points: 1,
     },
     {
@@ -1423,14 +1423,14 @@ export const questionsData = [
         "מקטינים את התנגדות הקו פי שניים ומגדילים את עוצמת הזרם הזורן דרכו פי שניים. ההספק ההולך לאיבוד בקו",
       num: "f17",
       options: ["יגדל פי שניים", "יגדל פי ארבע", "לא ישתנה", "יקטן פי שניים"],
-      correctOption: 1,
+      correctOption: 0,
       points: 1,
     },
     {
       question: "לחישוב הפסדי ההספק בקווים, משתמשים בנוסחא",
       num: "f18",
       options: [" ", " ", " ", " "],
-      correctOption: 1,
+      correctOption: 0,
       points: 1,
     },
     {
@@ -1450,23 +1450,23 @@ export const questionsData = [
         "למציאת הספקו של צרכן, בלתי מוכר, מחברים אותו למקור מתח ומחברים במעגל וולטמטר ואמפרמטר. הנוסחא המתאימה לחישוב ההספק, במקרה זה היא",
       num: "f20",
       options: [" ", " ", " ", " "],
-      correctOption: 1,
+      correctOption: 3,
       points: 1,
     },
   ],
   [
     {
       question: "באיזה מהתרשימים הבאים החיבור הוא מקבילי?",
-      num: "g1",
+      num: "ז1",
       options: [" ", " ", " ", " "],
-      correctOption: 1,
+      correctOption: 3,
       points: 1,
     },
     {
       question: "באיזה מהתרשימים הבאים החיבור אינו מקבילי?",
       num: "g2",
       options: [" ", " ", " ", " "],
-      correctOption: 1,
+      correctOption: 2,
       points: 1,
     },
     {
@@ -1510,7 +1510,7 @@ export const questionsData = [
         "לצומת מגיעים 3 מוליכים, אשר כל אחד מהם, נושא זרם שעוצמתו 5 אמפר מהצומת יוצא מוליך הנושא",
       num: "g6",
       options: [" ", " ", " ", " "],
-      correctOption: 1,
+      correctOption: 2,
       points: 1,
     },
     {
@@ -1577,7 +1577,7 @@ export const questionsData = [
       question: "את ההתנגדות השקולה של מעגל מקבילי מחשבים באמצעות הנוחסא",
       num: "g13",
       options: [" ", " ", " ", " "],
-      correctOption: 1,
+      correctOption: 3,
       points: 1,
     },
     {
@@ -1656,7 +1656,7 @@ export const questionsData = [
         "בחיבור מקבילי של n נגדים בעלי התנגדות (R). תהיה ההתנגדות השקולה (R T) שווה",
       num: "g20",
       options: [" ", " ", " ", " "],
-      correctOption: 1,
+      correctOption: 2,
       points: 1,
     },
     {
@@ -1677,7 +1677,7 @@ export const questionsData = [
         "מחברים במקביל 4 צרכנים, שהתנגדות כל אחד מהם 4 אום. ההתנגדות השקולה של המעגל תהיה",
       num: "g22",
       options: ["16 אום", "8 אום", "1 אום", "1/4 אום"],
-      correctOption: 3,
+      correctOption: 2,
       points: 1,
     },
     {
@@ -1711,14 +1711,14 @@ export const questionsData = [
       question: "באיזה מהתרשימים הבאים מופיע חיבור טורי של נגדים?",
       num: "h1",
       options: [" ", " ", " ", " "],
-      correctOption: 1,
+      correctOption: 3,
       points: 1,
     },
     {
       question: "באיזה מהתרשימים הבאים החיבור אינו טורי?",
       num: "h2",
       options: [" ", " ", " ", " "],
-      correctOption: 1,
+      correctOption: 2,
       points: 1,
     },
     {
@@ -1806,7 +1806,7 @@ export const questionsData = [
         "שיעור המתח המזרים זרם דרך אותה התנגדות",
         "ירידת מתח המקור",
       ],
-      correctOption: 1,
+      correctOption: 2,
       points: 1,
     },
     {
@@ -1977,7 +1977,7 @@ export const questionsData = [
         "בהתחלה יעלה עד לערך מסוים, ואז יתחיל לרדת",
         "מתח ההדקים אינו תלוי בהתנגדות המעגל החיצוני",
       ],
-      correctOption: 1,
+      correctOption: 0,
       points: 1,
     },
     {
@@ -2010,7 +2010,7 @@ export const questionsData = [
       question: "במעגל טורי מוסיפים נגד נוסף בטור. מתח ההדקים של המקור",
       num: "h30",
       options: ["יעלה", "ירד", "יישאר ללא שינוי", "תלוי בערך ההתנגדות שנוספה"],
-      correctOption: 1,
+      correctOption: 0,
       points: 1,
     },
     {
@@ -2024,7 +2024,7 @@ export const questionsData = [
       question: "אם מוציאים את אחד הנגדים ממעגל טורי, מתח ההדקים של המקור",
       num: "h32",
       options: ["יעלה", "ירד", "יישאר ללא שינוי", "תלוי בהתנגדות השקולה"],
-      correctOption: 2,
+      correctOption: 1,
       points: 1,
     },
     {
@@ -2036,11 +2036,12 @@ export const questionsData = [
         "התנגדות המעגל היא אפס",
         "המעגל פתוח",
       ],
-      correctOption: 1,
+      correctOption: 2,
       points: 1,
     },
   ],
   [
+    /* till here checked */
     {
       question: "באיזה מהתרשימים החיבור הוא מעורב?",
       num: "i1",
