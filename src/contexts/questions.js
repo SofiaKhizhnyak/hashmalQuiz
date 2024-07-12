@@ -1709,7 +1709,7 @@ export const questionsData = [
   [
     {
       question: "באיזה מהתרשימים הבאים מופיע חיבור טורי של נגדים?",
-      num: "h1",
+      num: "ח1",
       options: [" ", " ", " ", " "],
       correctOption: 3,
       points: 1,
@@ -2041,12 +2041,12 @@ export const questionsData = [
     },
   ],
   [
-    /* till here checked */
+    //פרק ט
     {
       question: "באיזה מהתרשימים החיבור הוא מעורב?",
-      num: "i1",
+      num: "ט1",
       options: [" ", " ", " ", " "],
-      correctOption: 1,
+      correctOption: 2,
       points: 1,
     },
     {
@@ -2065,7 +2065,7 @@ export const questionsData = [
         "בחלקם מחוברים בטור והשאר גם כן בטור",
         "כל הנגדים מחוברים או בטור או במקביל",
       ],
-      correctOption: 3,
+      correctOption: 0,
       points: 1,
     },
     {
@@ -2077,7 +2077,7 @@ export const questionsData = [
         "ערכו של כל נגד ואופן חיבורם",
         "עוצמת הזרם ומספר הנגדים המחוברים במקביל",
       ],
-      correctOption: 0,
+      correctOption: 2,
       points: 1,
     },
     {
@@ -2096,14 +2096,14 @@ export const questionsData = [
       question: "אם נסגור את המפסק המופיע בתרשים, ההתנגדות השקולה",
       num: "i6",
       options: ["תעלה", "תרד", "לא תשתנה", "תהיה 2.5 אום"],
-      correctOption: 0,
+      correctOption: 1,
       points: 1,
     },
     {
       question: "אם נפתח את המפסק המופיע בתרשים, ההתנגדות השקולה",
       num: "i7",
       options: ["תעלה", "תרד", "תהיה שווה לאפס", "תהיה שווה ל-7.5 אום"],
-      correctOption: 2,
+      correctOption: 0,
       points: 1,
     },
     {
@@ -2117,7 +2117,7 @@ export const questionsData = [
       question: "ההתנגדות השקולה בין הנקודות A ו-B היא",
       num: "i9",
       options: ["5 אום", "20 אום", "10 אום", "0 אום"],
-      correctOption: 1,
+      correctOption: 0,
       points: 1,
     },
     {
@@ -2130,7 +2130,7 @@ export const questionsData = [
         "שהמפסקים S1  ו-S2 יהיו סגורים",
         "כל המפסקים חייבים להיות סגורים",
       ],
-      correctOption: 3,
+      correctOption: 2,
       points: 1,
     },
     {
@@ -2143,14 +2143,14 @@ export const questionsData = [
         "הנגד R1 או R2 מנותק",
         "הנגדים R1 ו-R4 מנותקים",
       ],
-      correctOption: 0,
+      correctOption: 3,
       points: 1,
     },
     {
       question: "מפל המתח על גבי הנגד R1 הוא",
       num: "i12",
       options: ["2 וולט", "4 וולט", "5 וולט", "10 וולט"],
-      correctOption: 1,
+      correctOption: 3,
       points: 1,
     },
     {
@@ -2208,7 +2208,7 @@ export const questionsData = [
         "בין אלו נקודות תחבר צרכן שהתנגדותו 20 אום ומיועד לזרם בעוצמה של 4 אמפר?",
       num: "i18",
       options: ["A – E", "B – F", "C – G", "D – H"],
-      correctOption: 2,
+      correctOption: 1,
       points: 1,
     },
     {
@@ -2220,7 +2220,7 @@ export const questionsData = [
         "עוצמת הזרם במעגל תקטן",
         "עוצמת הזרם במעגל לא תשתנה",
       ],
-      correctOption: 1,
+      correctOption: 0,
       points: 1,
     },
     {
@@ -2232,7 +2232,7 @@ export const questionsData = [
         "עוצמת הזרם במעגל תקטן",
         "עוצמת הזרם במעגל לא תשתנה",
       ],
-      correctOption: 1,
+      correctOption: 0,
       points: 1,
     },
     {
@@ -2268,7 +2268,7 @@ export const questionsData = [
         "כי מחברים אותו בטור לצרכן",
         "כדי למנוע מפל מתח במכשיר",
       ],
-      correctOption: 1,
+      correctOption: 3,
       points: 1,
     },
     {
@@ -2292,7 +2292,7 @@ export const questionsData = [
         "או בטור או במקביל",
         "במקביל, כאשר מודדים זרמים בעלי עוצמה גבוהה, ובטור, כאשר מודדים זרמים בעלי עוצמה נמוכה",
       ],
-      correctOption: 3,
+      correctOption: 1,
       points: 1,
     },
     {
@@ -2304,7 +2304,7 @@ export const questionsData = [
         "לאפשר מדידה של עוצמות זרם נמוכות מעוצמת הזרם של הטייה מלאה",
         "לאפשר מדידה של עוצמות זרם גבוהות  מעוצמת הזרם של הטייה מלאה",
       ],
-      correctOption: 2,
+      correctOption: 3,
       points: 1,
     },
     {
@@ -2316,7 +2316,7 @@ export const questionsData = [
         "ביחס הפוך להתנגדויות שלהם",
         "בכל מקרה עוצמת הזרם במד הזרם תהיה חזקה יותר",
       ],
-      correctOption: 1,
+      correctOption: 2,
       points: 1,
     },
 
@@ -2329,7 +2329,7 @@ export const questionsData = [
         "לעוצמת הזרם הנמדדת פחות עוצמת הזרם במיצד",
         "לעוצמת הזרם במיצד פחות עוצמת הזרם הנמדדת",
       ],
-      correctOption: 1,
+      correctOption: 2,
       points: 1,
     },
     {
@@ -2341,7 +2341,7 @@ export const questionsData = [
         "גדול ממפל המתח על גבי מד- הזרם",
         "תלוי במקרה",
       ],
-      correctOption: 1,
+      correctOption: 0,
       points: 1,
     },
     {
@@ -2353,7 +2353,7 @@ export const questionsData = [
         "לכפול את עוצמת הזרם הנמדדת בהתנגדות הפנימית של מד-הזרם",
         "לכפול את עוצמת הזרם במיצד בהתנגדות המיצד",
       ],
-      correctOption: 2,
+      correctOption: 3,
       points: 1,
     },
     {
@@ -2365,7 +2365,7 @@ export const questionsData = [
         "למד הזרם לא יקרה דבר, והוא ימשיך לפעול",
         "תלוי בעוצמת הזרם הנמדד",
       ],
-      correctOption: 0,
+      correctOption: 3,
       points: 1,
     },
     {
@@ -2391,7 +2391,7 @@ export const questionsData = [
         "שהמיצד אינו מחובר כשורה",
         "שהמיצד לקוי ויש להחליפו באחר",
       ],
-      correctOption: 0,
+      correctOption: 1,
       points: 1,
     },
     {
@@ -2427,7 +2427,7 @@ export const questionsData = [
         "כדי להגביל, ככל האפשר את עוצמת הזרם הזורם דרכו",
         "אין הכרח שהתנגדותו הפנימית תהיה גבוהה",
       ],
-      correctOption: 0,
+      correctOption: 2,
       points: 1,
     },
     {
@@ -2536,7 +2536,7 @@ export const questionsData = [
         "מצב זה ייתכן רק כאשר אין זרימת זרם דרך הנגדים",
         "מצב זה ייתכן רק כאשר אחד הנגדים מנותק",
       ],
-      correctOption: 0,
+      correctOption: 1,
       points: 1,
     },
     {
@@ -2549,7 +2549,7 @@ export const questionsData = [
         "דרך המוליך לא יזרום זרם",
         "דרך המוליך יזרום זרם",
       ],
-      correctOption: 0,
+      correctOption: 2,
       points: 1,
     },
     {
@@ -2573,7 +2573,7 @@ export const questionsData = [
         "השוואת פוטנציאלים בין שתי נקודות",
         "השוואת התנגדויות",
       ],
-      correctOption: 3,
+      correctOption: 0,
       points: 1,
     },
     {
@@ -2769,7 +2769,7 @@ export const questionsData = [
         "תלויה בהתנגדות השקולה של הצרכנים",
         'תלויה בכא"מ השקול של הסוללה',
       ],
-      correctOption: 0,
+      correctOption: 1,
       points: 1,
     },
     {
@@ -2800,7 +2800,7 @@ export const questionsData = [
       question: "איזה מבין החיבורים הבאים הוא חיבור מקבילי?",
       num: "י19",
       options: ["", "", "", ""],
-      correctOption: 0,
+      correctOption: 3,
       points: 1,
     },
     {
@@ -2903,7 +2903,7 @@ export const questionsData = [
       question: "איזה מהסוללות הבאות היא סוללה מעורבת?",
       num: "י28",
       options: ["", "", "", ""],
-      correctOption: 0,
+      correctOption: 3,
       points: 1,
     },
     {
