@@ -7,7 +7,9 @@ function Question() {
   let question = questions.at(index);
   return (
     <div className="to-right">
-      <h4 className="q">{question.question}</h4>
+      <h4 className="q" style={{ direction: "rtl", textAlign: "right" }}>
+        {question.question}
+      </h4>
       <Options question={question} key={crypto.randomUUID()} />
     </div>
   );

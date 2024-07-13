@@ -1,11 +1,28 @@
 import { useQuiz } from "../contexts/QuizContext";
+import MathJax from "./MathJax";
 
 function Options({ question }) {
   const { dispatch, answer } = useQuiz();
   const hasAnswered = answer !== null;
 
+  const renderOption = (option) => {
+    if (isValidImageUrl(option)) {
+      return (
+        <img
+          style={{ width: "20rem", height: "10rem" }}
+          src={option}
+          alt="Option"
+        />
+      );
+    } else if (isMathJaxOption(option)) {
+      return <MathJax>{`\\(${option}\\)`}</MathJax>;
+    } else {
+      return option;
+    }
+  };
+
   return (
-    <div>
+    <div style={{ direction: "rtl", textAlign: "right" }}>
       <div className="options">
         {question.options.map((option, index) => (
           <button
@@ -22,15 +39,7 @@ function Options({ question }) {
             disabled={hasAnswered}
             onClick={() => dispatch({ type: "newAnswer", payload: index })}
           >
-            {isValidImageUrl(option) ? (
-              <img
-                style={{ width: "48px", height: "35px" }}
-                src={option}
-                alt={`Option ${index}`}
-              />
-            ) : (
-              option
-            )}
+            {renderOption(option)}
           </button>
         ))}
       </div>
@@ -41,6 +50,11 @@ function isValidImageUrl(url) {
   // This regex pattern checks if the URL ends with common image extensions
   const imageExtensions = /\.(jpg|jpeg|png|gif)$/i;
   return imageExtensions.test(url);
+}
+
+function isMathJaxOption(option) {
+  // Check if the option contains LaTeX syntax
+  return option.includes("\\frac") || option.includes("\\cdot");
 }
 
 export default Options;
