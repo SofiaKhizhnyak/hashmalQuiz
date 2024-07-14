@@ -1207,7 +1207,7 @@ export const questionsData = [
         " U = \\frac{R}{I}",
         "U = I \\cdot {R} ",
       ],
-      correctOption: 0,
+      correctOption: 3,
       points: 1,
     },
     {
@@ -1219,7 +1219,7 @@ export const questionsData = [
         "R =  \\frac{U}{I}",
         "R =  \\frac{I}{U}",
       ],
-      correctOption: 0,
+      correctOption: 2,
       points: 1,
     },
     {
@@ -1231,21 +1231,19 @@ export const questionsData = [
         "/question-options-images/e10-c.png",
         "/question-options-images/e10-d.png",
       ],
-      correctOption: 0,
-      points: 1,
-    },
-    {
-      question: "התרשים המתאים למדידת התנגדות באמצעות אמפרמטר ווולטמטר הוא",
-      num: "e11",
-      options: ["", "", "", ""],
-      correctOption: 0,
+      correctOption: 3,
       points: 1,
     },
     {
       question: "לחישוב ההתנגדות, הנמדדת באמצעות וולטמטר ואמפרמטר, עלינו",
-      num: "e12",
-      options: ["", "", "", ""],
-      correctOption: 0,
+      num: "e11",
+      options: [
+        "לכפול את שתי הקריאות זו בזו",
+        "לחלק את המתח, שמציין הוולטמטר בעוצמת הזרם, שמציין האמפרמטר",
+        "לחלק את עוצמת הזרם, שמציין האמפרמטר במתח, שמציין הוולטמטר",
+        "לחבר את שתי הקריאות",
+      ],
+      correctOption: 1,
       points: 1,
     },
   ],
@@ -1277,7 +1275,12 @@ export const questionsData = [
     {
       question: "הנוסחא הנכונה לחשוב אנרגיה חשמלית היא",
       num: "f3",
-      options: [" ", " ", " ", " "],
+      options: [
+        "W = {U}\\cdot{I}\\cdot{t}",
+        "W =  \\frac{UI}{t}",
+        "W =  \\frac{U}{It}",
+        "W =  \\frac{I}{Ut}",
+      ],
       correctOption: 0,
       points: 1,
     },
@@ -1444,7 +1447,12 @@ export const questionsData = [
     {
       question: "לחישוב הפסדי ההספק בקווים, משתמשים בנוסחא",
       num: "f18",
-      options: [" ", " ", " ", " "],
+      options: [
+        "P = {I}^2\\cdot{R}",
+        "P = {U}\\cdot{I}",
+        "P = \\frac{U^2}{R}",
+        "P = {I}^2\\cdot{U}",
+      ],
       correctOption: 0,
       points: 1,
     },
@@ -1464,7 +1472,12 @@ export const questionsData = [
       question:
         "למציאת הספקו של צרכן, בלתי מוכר, מחברים אותו למקור מתח ומחברים במעגל וולטמטר ואמפרמטר. הנוסחא המתאימה לחישוב ההספק, במקרה זה היא",
       num: "f20",
-      options: [" ", " ", " ", " "],
+      options: [
+        "P = {I}^2\\cdot{R}",
+        "P = \\frac{U^2}{R}",
+        "P = {I}^2\\cdot{U^2}",
+        "P = {U}\\cdot{I}",
+      ],
       correctOption: 3,
       points: 1,
     },
@@ -1473,14 +1486,24 @@ export const questionsData = [
     {
       question: "באיזה מהתרשימים הבאים החיבור הוא מקבילי?",
       num: "ז1",
-      options: [" ", " ", " ", " "],
+      options: [
+        "/question-options-images/ז1-א.png",
+        "/question-options-images/ז1-ב.png",
+        "/question-options-images/ז1-ג.png",
+        "/question-options-images/ז1-ד.png",
+      ],
       correctOption: 3,
       points: 1,
     },
     {
       question: "באיזה מהתרשימים הבאים החיבור אינו מקבילי?",
       num: "g2",
-      options: [" ", " ", " ", " "],
+      options: [
+        "/question-options-images/ז2-א.png",
+        "/question-options-images/ז2-ב.png",
+        "/question-options-images/ז2-ג.png",
+        "/question-options-images/ז2-ד.png",
+      ],
       correctOption: 2,
       points: 1,
     },
@@ -1498,7 +1521,7 @@ export const questionsData = [
     },
     {
       question: "על מנת שצרכנים המחוברים במקביל יפעלו כראוי, הם חייבים להיות",
-      num: "g4",
+      num: "ז4",
       options: [
         "מתוכננים לאותו המתח (מתח הרשת)",
         "מתוכננים לאותה עוצמת זרם",
@@ -1510,7 +1533,7 @@ export const questionsData = [
     },
     {
       question: "חוק הזרמים לקירכהוף קובע",
-      num: "g5",
+      num: "ז5",
       options: [
         "הזרם נמצא ביחס ישר למתח וביחס הפוך להתנגדות",
         "הזרם במעגל חשמלי שווה למנת המתח בהתנגדות",
@@ -1523,8 +1546,8 @@ export const questionsData = [
     {
       question:
         "לצומת מגיעים 3 מוליכים, אשר כל אחד מהם, נושא זרם שעוצמתו 5 אמפר מהצומת יוצא מוליך הנושא",
-      num: "g6",
-      options: [" ", " ", " ", " "],
+      num: "ז6",
+      options: ["רפמא \\frac{3}{5}", "3 אמפר", "15 אמפר", "5 אמפר"],
       correctOption: 2,
       points: 1,
     },
@@ -1591,7 +1614,12 @@ export const questionsData = [
     {
       question: "את ההתנגדות השקולה של מעגל מקבילי מחשבים באמצעות הנוחסא",
       num: "g13",
-      options: [" ", " ", " ", " "],
+      options: [
+        "RT = {R1}+ {R2} + {R3} + \\cdot\\cdot\\cdot ",
+        "RT = \\frac{1}{R1} + \\frac{1}{R2} + \\frac{1}{R3} + ...",
+        "\\frac{1}{RT} = R1+ R2 + R3 + ...",
+        "\\frac{1}{RT} = \\frac{1}{R1} + \\frac{1}{R2} + \\frac{1}{R3} + ...",
+      ],
       correctOption: 3,
       points: 1,
     },
@@ -1670,7 +1698,12 @@ export const questionsData = [
       question:
         "בחיבור מקבילי של n נגדים בעלי התנגדות (R). תהיה ההתנגדות השקולה (R T) שווה",
       num: "g20",
-      options: [" ", " ", " ", " "],
+      options: [
+        "RT = {n}\\cdot{R}",
+        "RT = R",
+        "RT = \\frac{R}{n}",
+        "RT = \\frac{n}{R}",
+      ],
       correctOption: 2,
       points: 1,
     },
@@ -1725,14 +1758,24 @@ export const questionsData = [
     {
       question: "באיזה מהתרשימים הבאים מופיע חיבור טורי של נגדים?",
       num: "ח1",
-      options: [" ", " ", " ", " "],
+      options: [
+        "/question-options-images/ח1-א.png",
+        "/question-options-images/ח1-ב.png",
+        "/question-options-images/ח1-ג.png",
+        "/question-options-images/ח1-ד.png",
+      ],
       correctOption: 3,
       points: 1,
     },
     {
       question: "באיזה מהתרשימים הבאים החיבור אינו טורי?",
       num: "h2",
-      options: [" ", " ", " ", " "],
+      options: [
+        "/question-options-images/ח2-א.png",
+        "/question-options-images/ח2-ב.png",
+        "/question-options-images/ח2-ג.png",
+        "/question-options-images/ח2-ד.png",
+      ],
       correctOption: 2,
       points: 1,
     },
@@ -2060,14 +2103,24 @@ export const questionsData = [
     {
       question: "באיזה מהתרשימים החיבור הוא מעורב?",
       num: "ט1",
-      options: [" ", " ", " ", " "],
+      options: [
+        "/question-options-images/ט1-א.png",
+        "/question-options-images/ט1-ב.png",
+        "/question-options-images/ט1-ג.png",
+        "/question-options-images/ט1-ד.png",
+      ],
       correctOption: 2,
       points: 1,
     },
     {
       question: "באיזה מהתרשימים הבאים החיבור אינו מעורב?",
       num: "i2",
-      options: [" ", " ", " ", " "],
+      options: [
+        "/question-options-images/ט2-א.png",
+        "/question-options-images/ט2-ב.png",
+        "/question-options-images/ט2-ג.png",
+        "/question-options-images/ט2-ד.png",
+      ],
       correctOption: 1,
       points: 1,
     },
@@ -3054,7 +3107,7 @@ export const questionsData = [
       question: 'היחידה כ"ס (כח-סוס) שווה ל?',
       num: "יא8",
       options: ['75 קג"מ בשניה', "1000 וט", "75 וט", '736 קג"מ בשניה'],
-      correctOption: 3,
+      correctOption: 0,
       points: 1,
     },
     {
@@ -3075,7 +3128,7 @@ export const questionsData = [
       question: "אנרגיה חשמלית מומרת לאנרגיה מכנית באמצעות",
       num: "יא11",
       options: ["מנועים ומחוללים", "מעליות ומנופים", "מחוללים", "מנועים"],
-      correctOption: 0,
+      correctOption: 3,
       points: 1,
     },
     {
@@ -3229,7 +3282,7 @@ export const questionsData = [
         "המתח וההתנגדות",
         "עוצמת הזרם וההספק",
       ],
-      correctOption: 1,
+      correctOption: 0,
       points: 1,
     },
     {
@@ -3265,7 +3318,7 @@ export const questionsData = [
         "בחיבור מעורב",
         "אופן החיבור תלוי בסוג הצרכנים",
       ],
-      correctOption: 0,
+      correctOption: 1,
       points: 1,
     },
   ],
@@ -3293,7 +3346,7 @@ export const questionsData = [
       question: "לכל מגנט",
       num: "יב3",
       options: ["שני קטבים", "ארבעה קטבים", "קוטב אחד", "תלוי בסוג המגנט"],
-      correctOption: 3,
+      correctOption: 0,
       points: 1,
     },
     {
@@ -3305,7 +3358,7 @@ export const questionsData = [
         "מרכז המשיכה של כדור הארץ",
         "קו-המשווה של כדור הארץ",
       ],
-      correctOption: 1,
+      correctOption: 0,
       points: 1,
     },
     {
@@ -3317,14 +3370,14 @@ export const questionsData = [
         "מיוצרים ממגנטים טבעיים",
         "מיוצרים ממגנטית",
       ],
-      correctOption: 0,
+      correctOption: 1,
       points: 1,
     },
     {
       question: "החומר הפרו מגנטי בעל התכונות המגנטיות החזקות ביותר הוא",
       num: "יב6",
       options: ["המגנטית", "הברזל", "הניקל", "הקובלט"],
-      correctOption: 3,
+      correctOption: 1,
       points: 1,
     },
     {
@@ -3338,21 +3391,21 @@ export const questionsData = [
       question: "מגנט שאינו שומר על תכונותיו המגנטיות לאורך זמן קרוי",
       num: "יב8",
       options: ["מגנט חלש", "מגנט פררומגנטי", "מגנט קבוע", "מגנט ארעי"],
-      correctOption: 1,
+      correctOption: 3,
       points: 1,
     },
     {
       question: "לייצור מגנט קבוע נעדיף להשתמש",
       num: "יב9",
       options: ["ניקל", "קובלט", "פלדה רכה", "פלדה קשה"],
-      correctOption: 1,
+      correctOption: 3,
       points: 1,
     },
     {
       question: "לייצור מגנט ארעי נעדיף להשתמש",
       num: "יב10",
       options: ["פלדה קשה", "פלדה רכה", "ניקל", "מגנטית"],
-      correctOption: 0,
+      correctOption: 1,
       points: 1,
     },
     {
@@ -3364,7 +3417,7 @@ export const questionsData = [
         "אינם משפיעים זה על זה",
         "תלוי אם הם שייכים לאותו מגנט או למגנטים שונים",
       ],
-      correctOption: 2,
+      correctOption: 1,
       points: 1,
     },
     {
@@ -3376,7 +3429,7 @@ export const questionsData = [
         "אינם משפיעים זה על זה",
         "תלוי אם הם שייכים לאותו מגנט או למגנטים שונים",
       ],
-      correctOption: 3,
+      correctOption: 0,
       points: 1,
     },
     {
@@ -3412,7 +3465,7 @@ export const questionsData = [
         "מתפשטים ברווים ישרים",
         "מושכים זה את זה ונחתכים",
       ],
-      correctOption: 1,
+      correctOption: 0,
       points: 1,
     },
     {
@@ -3424,7 +3477,7 @@ export const questionsData = [
         "פונה בכיוון קווי בכוח",
         "נערכת במקביל לציר המגנט",
       ],
-      correctOption: 3,
+      correctOption: 2,
       points: 1,
     },
     {
@@ -3448,7 +3501,7 @@ export const questionsData = [
         "באזור הקוטב הדרומי",
         "במרכז המגנטי",
       ],
-      correctOption: 3,
+      correctOption: 0,
       points: 1,
     },
     {
@@ -3460,7 +3513,7 @@ export const questionsData = [
         "מגנט אחד דו-קוטבי ומוט אחד משולל תכונות של מגנט",
         "שני מוטות משוללים תכונות של מגנט",
       ],
-      correctOption: 2,
+      correctOption: 1,
       points: 1,
     },
     {
@@ -3472,7 +3525,7 @@ export const questionsData = [
         "להפוך את קוטביות המגנט",
         "להפכו ממגנט ארעי למגנט קבוע",
       ],
-      correctOption: 2,
+      correctOption: 0,
       points: 1,
     },
     {
@@ -3499,7 +3552,7 @@ export const questionsData = [
         "בקווים ישרים המאונכים לתייל",
         "בקווים ישרים היוצאים מהתייל",
       ],
-      correctOption: 3,
+      correctOption: 0,
       points: 1,
     },
     {
@@ -3550,6 +3603,13 @@ export const questionsData = [
         "אם הזרם זורם בכיוון  כף היד יציינו האצבעות את מגמת קווי הכוח",
         "כלל היד הימנית אינו מתאים למטרה זו לכן הכרחי להיעזר בכלל הבורג",
       ],
+      correctOption: 1,
+      points: 1,
+    },
+    {
+      question: "איזה מהתרשימים הבאים הוא הנכון",
+      num: "יג6",
+      options: ["", "", "", ""],
       correctOption: 0,
       points: 1,
     },
@@ -3562,6 +3622,13 @@ export const questionsData = [
         "דוחים זה את זה כאשר הזרמים הזורמים דרכם הם בכיוונים מנוגדים",
         "אינם נמשכים ואינם נדחים, הואיל ושני שדותיהם מבטלים זה את זה.",
       ],
+      correctOption: 0,
+      points: 1,
+    },
+    {
+      question: "איזה הוא הוא התרשים הנכון",
+      num: "יג8",
+      options: ["", "", "", ""],
       correctOption: 0,
       points: 1,
     },
@@ -3726,6 +3793,33 @@ export const questionsData = [
       points: 1,
     },
     {
+      question: "באיזה מהתרשימים הבאים נכונה היא קוטביות האלקטרומגנט?",
+      num: "יג23",
+      options: ["", "", "", ""],
+      correctOption: 0,
+      points: 1,
+    },
+    {
+      question: "בהתייחס לתרשים",
+      num: "יג24",
+      options: [
+        "בין האלקטרומגנטים יפעל כוח משיכה",
+        "בין האלקטרומגנטים יפעל כוח דחיה",
+        "שני השדות מתבטלים ולא יפעלו שום כוחות",
+        "הזרמים זורמים בכיוונים הפוכים ומבטלים זה את זה",
+      ],
+      correctOption: 1,
+      points: 1,
+    },
+    {
+      question:
+        "בתרשים מופיעה ליבה בצורת פרסה. על הליבה כרוכים שני סלילים. כיצד עליך לבצע את החיבורים כדי לקבל קוטביות, המתאימה לזו המסומנת בתרשים?",
+      num: "יג25",
+      options: ["", "", "", ""],
+      correctOption: 1,
+      points: 1,
+    },
+    {
       question: "אלקטרומגנטים להרמת משאות משמשים להרמת:",
       num: "יג26",
       options: [
@@ -3758,7 +3852,7 @@ export const questionsData = [
         "להגנה על המתקן בפני זרמים בעלי עוצמה גבוהה מהמותר.",
         "להגנה על המתקן בפני זרמים בעלי עוצמה נמוכה מהמותר.",
       ],
-      correctOption: 1,
+      correctOption: 2,
       points: 1,
     },
   ],
@@ -3772,7 +3866,7 @@ export const questionsData = [
         "המעגל המורכב מסליל של אלקטרומגנט ומקור מתח.",
         "תאור של קו כוח מגנטי סביב מוליך ישר נושא זרם.",
       ],
-      correctOption: 2,
+      correctOption: 1,
       points: 1,
     },
     {
@@ -3796,14 +3890,14 @@ export const questionsData = [
         "את מספר קווי הכוח המגנטיים ביחידת שטח.",
         "את כלל קווי הכוח במעגל מגנטי.",
       ],
-      correctOption: 1,
+      correctOption: 3,
       points: 1,
     },
     {
       question: "יחידת השטף המגנטי היא:",
       num: "יד4",
       options: ["וובר.", "וובר למ״ר.", "אמפר-כריכות.", "אמפר-כריכות למטר."],
-      correctOption: 3,
+      correctOption: 0,
       points: 1,
     },
     {
@@ -3815,7 +3909,7 @@ export const questionsData = [
         "צפיפות השטף המגנטי.",
         "כוח-מגנטו-מניע.",
       ],
-      correctOption: 0,
+      correctOption: 2,
       points: 1,
     },
     {
@@ -3827,7 +3921,7 @@ export const questionsData = [
         "עוצמת השדה.",
         "שטף מגנטי.",
       ],
-      correctOption: 3,
+      correctOption: 1,
       points: 1,
     },
     {
@@ -3839,7 +3933,7 @@ export const questionsData = [
         "תהיה עוצמת השדה נמוכה יותר.",
         "תהיה עוצמת השדה גבוהה יותר.",
       ],
-      correctOption: 1,
+      correctOption: 0,
       points: 1,
     },
     {
@@ -3863,7 +3957,7 @@ export const questionsData = [
         "אמפר-כריכות מטר לוובר",
         "וובר לאמפר-כריכות למטר",
       ],
-      correctOption: 1,
+      correctOption: 3,
       points: 1,
     },
     {
@@ -3882,7 +3976,7 @@ export const questionsData = [
       question: "",
       num: "יד11",
       options: ["", "", "", ""],
-      correctOption: 0,
+      correctOption: 3,
       points: 1,
     },
     {
@@ -3894,7 +3988,7 @@ export const questionsData = [
         "שווה לחלחלות של הריק.",
         "עשויה להיות גבוהה או נמוכה מזו של הריק.",
       ],
-      correctOption: 1,
+      correctOption: 2,
       points: 1,
     },
     {
@@ -3906,7 +4000,7 @@ export const questionsData = [
         "נשארת קבועה",
         "עולה עד לערך מסויים ולאחר מכן יורדת",
       ],
-      correctOption: 0,
+      correctOption: 3,
       points: 1,
     },
     {
@@ -3919,6 +4013,13 @@ export const questionsData = [
         "החלחלות של חומר פררומגנטי לחלחלות של האוויר.",
       ],
       correctOption: 0,
+      points: 1,
+    },
+    {
+      question: "איזה מהמאפיינים הבאים מתאר עקום מגנוט",
+      num: "יד15",
+      options: ["", "", "", ""],
+      correctOption: 2,
       points: 1,
     },
     {
@@ -3954,7 +4055,7 @@ export const questionsData = [
         "תכונת החומר לשמור על סגולותיו המגנטיות.",
         "עוצמת השדה, הדרושה לביטול המגנטיות הנותרת.",
       ],
-      correctOption: 0,
+      correctOption: 3,
       points: 1,
     },
     {
@@ -3966,7 +4067,7 @@ export const questionsData = [
         "מותירות גבוהה וכפיינות נמוכה.",
         "מותירות נמוכה וכפיינות גבוהה.",
       ],
-      correctOption: 2,
+      correctOption: 0,
       points: 1,
     },
     {
@@ -3991,7 +4092,7 @@ export const questionsData = [
         "אין חשיבות לרוחב.",
         "אין חשיבות לצורת הלולאה.",
       ],
-      correctOption: 3,
+      correctOption: 1,
       points: 1,
     },
     {
@@ -4004,7 +4105,7 @@ export const questionsData = [
         "אין חשיבות לרוחב.",
         "אין חשיבות לצורת הלולאה.",
       ],
-      correctOption: 1,
+      correctOption: 0,
       points: 1,
     },
     {
@@ -4047,7 +4148,7 @@ export const questionsData = [
         "עוצמת השדה המגנטי נמצאת ביחס ישר לכוח-המגנטו-מניע וביחס הפוך לאורך המעגל",
         "השטף המגנטי נמצא ביחס ישר לכוח-המגנטו-מניע וביחס הפוך למיאון",
       ],
-      correctOption: 0,
+      correctOption: 3,
       points: 1,
     },
     {
@@ -4059,7 +4160,7 @@ export const questionsData = [
         "ביחס ישר לאורכו, ביחס הפוך לשטח החתך, וביחס הפוך לחלחלות.",
         "ביחס ישר לחלחלות, ביחס הפוך לאורכו, וביחס הפוך לשטח החתך.",
       ],
-      correctOption: 0,
+      correctOption: 2,
       points: 1,
     },
     {
@@ -4071,7 +4172,7 @@ export const questionsData = [
         "המיאון לא ישתנה",
         "המיאון ישתנה בחומר פררומגנטי בלבד",
       ],
-      correctOption: 2,
+      correctOption: 0,
       points: 1,
     },
     {
