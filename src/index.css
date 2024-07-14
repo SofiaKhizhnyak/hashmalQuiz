@@ -39,7 +39,7 @@ body {
 }
 
 .main {
-  width: 50rem;
+  width: 55rem;
 }
 
 .app-header {
@@ -272,7 +272,7 @@ progress {
   text-shadow: 3px 0px 7px rgba(22, 18, 4, 0.8),
     -3px 0px 7px rgba(12, 10, 2, 0.8), 0px 4px 7px rgba(5, 4, 0, 0.8);
 }
-.category-buttons {
+/* .category-buttons {
   display: flex;
   flex-wrap: wrap;
   direction: rtl;
@@ -282,6 +282,19 @@ progress {
   box-sizing: border-box;
   min-width: 110px;
   margin: 5px;
+} */
+.category-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  direction: rtl;
+}
+
+.category-buttons .btn-ui {
+  flex: 1 1 calc(25% - 10px); /* 25% width minus margin for 4 buttons per row */
+  box-sizing: border-box;
+  margin: 5px;
+  text-align: center;
 }
 .restart {
   background-color: var(--color-accent);
@@ -289,6 +302,7 @@ progress {
   color: var(--color-dark);
   float: right;
 }
+
 /* Responsive styles */
 @media screen and (max-width: 768px) {
   .main {
@@ -296,7 +310,7 @@ progress {
   }
 
   .app-header {
-    width: 100%;
+    width: 85%;
   }
 
   .category-buttons {
@@ -304,9 +318,34 @@ progress {
   }
 
   .category-buttons .btn-ui {
-    flex-basis: calc(33.333% - 10px);
+    flex-basis: calc(
+      25% - 10px
+    ); /* 25% width minus margin for 4 buttons per row */
     min-width: auto;
     margin: 5px;
+  }
+  h1 {
+    font-size: 2.5rem; /* Adjust as needed */
+  }
+
+  h2 {
+    font-size: 2rem; /* Adjust as needed */
+  }
+
+  h3 {
+    font-size: 1.7rem; /* Adjust as needed */
+  }
+
+  h4 {
+    font-size: 1.5rem; /* Adjust as needed */
+  }
+
+  .btn-option {
+    font-size: 1.2rem; /* Adjust as needed */
+  }
+
+  img {
+    width: 8rem; /* Adjust as needed */
   }
 }
 
@@ -320,7 +359,7 @@ progress {
   }
   h1 {
     font-family: "Codystar";
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   h2 {

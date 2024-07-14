@@ -1,3 +1,4 @@
+//this component is not in use currently, but it can be used to show the time remaining for the quiz
 import { useEffect } from "react";
 import { useQuiz } from "../contexts/QuizContext";
 
