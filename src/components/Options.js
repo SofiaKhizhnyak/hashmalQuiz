@@ -54,7 +54,12 @@ function isValidImageUrl(url) {
 
 function isMathJaxOption(option) {
   // Check if the option contains LaTeX syntax
-  return option.includes("\\frac") || option.includes("\\cdot");
+  return (
+    option.includes("\\frac") ||
+    option.includes("\\cdot") ||
+    option.includes("10^") ||
+    option.includes("\\sqrt")
+  );
 }
 
 export default Options;

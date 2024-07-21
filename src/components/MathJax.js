@@ -10,3 +10,15 @@ const MathJax = ({ children }) => {
 };
 
 export default MathJax;
+/* import React, { useEffect } from "react";
+
+const MathJax = ({ children }) => {
+  useEffect(() => {
+    // Use MathJax to typeset the content
+    window.MathJax.typeset();
+  }, [children]);
+
+  return <div>{children}</div>;
+};
+
+export default MathJax; */

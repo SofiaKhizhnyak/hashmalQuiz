@@ -384,4 +384,7 @@ progress {
   .btn-option {
     font-size: 1.2rem;
   }
+  #logoHashmal {
+    width: 4rem;
+  }
 }
