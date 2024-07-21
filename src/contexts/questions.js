@@ -4972,7 +4972,7 @@ export const questionsData = [
         " מצבר כולל 6 תאי עופרת חומצה כשכל תא מספק 2.1 וולט ומחובר למעגל בו זורמים 2 אמפר. מתח ההדקים של המצבר הוא 10 וולט. מהי ההתנגדות הפנימית של המצבר?",
       num: "36מכשירים",
       options: ["1.3 אוהם", "2.6 אוהם", "5.0 אוהם", "6.3 אוהם"],
-      correctOption: 1,
+      correctOption: 0,
       points: 1,
     },
     {
@@ -4984,7 +4984,7 @@ export const questionsData = [
         "לשטוף את התא במים זורמים עד שהחומצה שנשפכה תהפוך לאבקה לבנה",
         "לנקות את התא עם סמרטוט טבול בשמן",
       ],
-      correctOption: "",
+      correctOption: 0,
       points: 1,
     },
     {
@@ -4996,7 +4996,7 @@ export const questionsData = [
         "ההתנגדות הפנימית הגדלה יוצרת חום המונע את הקפיאה",
         "הגזים יוצרים בידוד ומונעים מגע בין החומצה לאוויר הקר",
       ],
-      correctOption: "",
+      correctOption: 1,
       points: 1,
     },
     {
@@ -5008,7 +5008,7 @@ export const questionsData = [
         "מצב הטעינה של המצבר",
         "קיבול המצבר",
       ],
-      correctOption: "",
+      correctOption: 2,
       points: 1,
     },
     {
@@ -5020,7 +5020,7 @@ export const questionsData = [
         "רק מצברים שלהם מתח אחיד ניתן לחבר בטור ולטעון בו זמנית",
         "רק מצברים שלהם מתח אחיד ניתן לחבר במקביל ולטעון בו זמנית",
       ],
-      correctOption: "",
+      correctOption: 0,
       points: 1,
     },
     {
@@ -5032,7 +5032,7 @@ export const questionsData = [
         "מצבר שקיבולו 35 אמפר שעות לא יפעל יותר מ-7 שעות",
         "המצבר יספק זרם של 35 אמפר למשך 5 שעות",
       ],
-      correctOption: "",
+      correctOption: 0,
       points: 1,
     },
     {
@@ -5045,14 +5045,14 @@ export const questionsData = [
         'ע"י חיבור המצברים במקביל',
         'ע"י חיבור המצברים בטור',
       ],
-      correctOption: "",
+      correctOption: 2,
       points: 1,
     },
     {
       question: "מהו המתח של תא בודד במצבר ניקל קדמיום?",
       num: "44מכשירים",
       options: ["1.3 וולט", "2.00 וולט", "2.25 וולט", "1.55 וולט"],
-      correctOption: "",
+      correctOption: 3,
       points: 1,
     },
     {
@@ -5064,7 +5064,7 @@ export const questionsData = [
         "תמיסת חומצה גופריתנית",
         "תמיסת אשלגן פרוקסיד",
       ],
-      correctOption: "",
+      correctOption: 0,
       points: 1,
     },
     {
@@ -5076,7 +5076,7 @@ export const questionsData = [
         "ההספק המירבי של המצבר",
         "המתח של כל תא במצבר",
       ],
-      correctOption: "",
+      correctOption: 1,
       points: 1,
     },
     {
@@ -5089,7 +5089,7 @@ export const questionsData = [
         "שני המשפטים 1,2 נכונים",
         "שני המשפטים 1,2 אינם נכונים",
       ],
-      correctOption: "",
+      correctOption: 0,
       points: 1,
     },
     {
@@ -5101,7 +5101,7 @@ export const questionsData = [
         "מופיעים גבישים רעילים ומכלים של האלקרטליט",
         "חום וסימני שריפה על בורגי החיבור",
       ],
-      correctOption: "",
+      correctOption: 3,
       points: 1,
     },
     {
@@ -5113,7 +5113,7 @@ export const questionsData = [
         "אלקטרוליט מדולל מדי",
         "התנגדות פנימית גבוהה של המצבר",
       ],
-      correctOption: "",
+      correctOption: 0,
       points: 1,
     },
     {
@@ -5125,7 +5125,7 @@ export const questionsData = [
         "במהלך זמן הטינה",
         "מיד לאחר סיום הטעינה",
       ],
-      correctOption: "",
+      correctOption: 3,
       points: 1,
     },
     {
@@ -5137,7 +5137,7 @@ export const questionsData = [
         "המצבר ריק לגמרי",
         "המצבר נמצא תחת עומס",
       ],
-      correctOption: "",
+      correctOption: 2,
       points: 1,
     },
     {
@@ -5150,7 +5150,7 @@ export const questionsData = [
         "גובה האלקטרוליט לא נבדק תקופתית",
         "האלקטרוליט נספג בלוחות המצבר",
       ],
-      correctOption: "",
+      correctOption: 3,
       points: 1,
     },
     {
@@ -5162,7 +5162,7 @@ export const questionsData = [
         "ע\"י מדידת טמפ' הלוחות",
         'ע"י מדידת גובה האלקטרוליט',
       ],
-      correctOption: "",
+      correctOption: 1,
       points: 1,
     },
     {
@@ -5175,7 +5175,7 @@ export const questionsData = [
         "לא יקרה דבר- ניתן להוסיף מים למצבר בכל זמן",
         "עודף נזילות (הזעה) תתרחש בזמן טעינה",
       ],
-      correctOption: "",
+      correctOption: 3,
       points: 1,
     },
     {
@@ -5188,7 +5188,7 @@ export const questionsData = [
         "טווח חירום",
         "טווח לשימוש אירובי",
       ],
-      correctOption: "",
+      correctOption: 0,
       points: 1,
     },
     {
@@ -5200,7 +5200,7 @@ export const questionsData = [
         "משקל הלוח כשהוא כולל את כל המכשירים",
         "מספר המכשירים המורכבים על הלוח",
       ],
-      correctOption: "",
+      correctOption: 2,
       points: 1,
     },
     {
@@ -5212,7 +5212,7 @@ export const questionsData = [
         "נחליף את האטם של הזכוכית על המכשיר",
         "נרכיב מכשיר אחר",
       ],
-      correctOption: "",
+      correctOption: 1,
       points: 1,
     },
     {
@@ -5232,7 +5232,7 @@ export const questionsData = [
         "ג'יירו כיוון",
         "מד טמפ' ראש צילינדר",
       ],
-      correctOption: "",
+      correctOption: 0,
       points: 1,
     },
     {
@@ -5240,7 +5240,7 @@ export const questionsData = [
         "כיצד תסומן על מד המהירות, המהירות הטובה ביותר לקבלת שעור נסיקה מיטבי במנוע אחד?",
       num: "60מכשירים",
       options: ["קשת לבנה", "קו אדום", "קו כחול", "קשת ירוקה"],
-      correctOption: "",
+      correctOption: 2,
       points: 1,
     },
     {
@@ -5252,14 +5252,14 @@ export const questionsData = [
         "טווח הטמפ' נמוך מדי",
         "טווח הטמפ' גבוה מדי",
       ],
-      correctOption: "",
+      correctOption: 1,
       points: 1,
     },
     {
       question: "איזה סימן על מכשיר משמש כדי לבדוק אם הזכוכית אינה מחליקה?",
       num: "62מכשירים",
       options: ["קשת צהובה", "סימן אינדקס לבן", "קו ירוק", "קו אדום"],
-      correctOption: "",
+      correctOption: 1,
       points: 1,
     },
     {
@@ -5271,7 +5271,7 @@ export const questionsData = [
         "יצרני המנוע והמטוס",
         "ספר התחזוקה או הטיסה של המטוס",
       ],
-      correctOption: "",
+      correctOption: 3,
       points: 1,
     },
     {
@@ -5283,7 +5283,7 @@ export const questionsData = [
         "לאפשר למכשירים לפעול בתנאי ויבראציה גבוהה",
         "לספוג זעזועים בתדירות גבוהה ובאמפליטודה גבוהה",
       ],
-      correctOption: "",
+      correctOption: 1,
       points: 1,
     },
     {
@@ -5295,7 +5295,7 @@ export const questionsData = [
         "בתכנון גוף המטוס",
         "תכנון גודל לוח המכשירים",
       ],
-      correctOption: "",
+      correctOption: 1,
       points: 1,
     },
     {
@@ -5307,7 +5307,7 @@ export const questionsData = [
         "באמצעות מדף למכשיר הספציפי הבולט מאחורי הלוח",
         'ע"י לחיצה חזקה על המכשיר המוחזק בלוח באמצעות חיכוך',
       ],
-      correctOption: "",
+      correctOption: 1,
       points: 1,
     },
   ],
@@ -5321,7 +5321,7 @@ export const questionsData = [
         "כדי למנוע הפרעות משדות מגנטיים חיצוניים",
         "כדי להקטין את כמות החום הנוצרת במכשיר",
       ],
-      correctOption: "",
+      correctOption: 2,
       points: 1,
     },
     {
@@ -5329,7 +5329,7 @@ export const questionsData = [
         "כאשר מרכיבים מכשיר על לוח מכשירים במטוס, מי אחראי שהמכשיר מסומן נכון?",
       num: "68מכשירים",
       options: ["מבקר מוסמך", "בעל המטוס", "מרכיב המכשיר", "יצרן המכשיר"],
-      correctOption: "",
+      correctOption: 2,
       points: 1,
     },
     {
@@ -5341,7 +5341,7 @@ export const questionsData = [
         "נתוני יצרן המכשירים",
         "יצרני המנוע והמכשירים",
       ],
-      correctOption: "",
+      correctOption: 0,
       points: 1,
     },
     {
@@ -5353,7 +5353,7 @@ export const questionsData = [
         "לא רשאי לבצע תיקונים במכשירי מנוע",
         "לא רשאי לבצע ביקורת 100 שעות",
       ],
-      correctOption: "",
+      correctOption: 2,
       points: 1,
     },
     {
@@ -5365,7 +5365,7 @@ export const questionsData = [
         "טווח המאפשר פעולה בתנאים מסוימים",
         "נתון מרבי או מזערי לתפעול בטוח",
       ],
-      correctOption: "",
+      correctOption: 3,
       points: 1,
     },
     {
@@ -5377,7 +5377,7 @@ export const questionsData = [
         "ביקורת 100 שעות",
         "ביקורת רבתי או אוברול למכשירים",
       ],
-      correctOption: "",
+      correctOption: 2,
       points: 1,
     },
     {
@@ -5389,7 +5389,7 @@ export const questionsData = [
         "לאפשר דרך חזרה לזרם",
         "להקל על הרכבת הלוח למקומו",
       ],
-      correctOption: "",
+      correctOption: 2,
       points: 1,
     },
     {
@@ -5401,7 +5401,7 @@ export const questionsData = [
         "דיאפרגמה או מספר דיאפרגמות",
         "אנדרואידים ממולאים בגז אינרטי המפעילים מערכות מכניות",
       ],
-      correctOption: "",
+      correctOption: 0,
       points: 1,
     },
     {
@@ -5414,7 +5414,7 @@ export const questionsData = [
         "משפטים 1 ו-2 אינם נכונים",
         "משפטים 1 ו-2 נכונים",
       ],
-      correctOption: "",
+      correctOption: 3,
       points: 1,
     },
     {
@@ -5427,7 +5427,7 @@ export const questionsData = [
         "מד הגובה יראה קריאה גבוהה מדי ומד המהירות יראה קריאה נמוכה מדי",
         "מד הגובה יראה קריאה נמוכה מדי ומד המהירות יראה קריאה גבוהה מדי",
       ],
-      correctOption: "",
+      correctOption: 0,
       points: 1,
     },
     {
@@ -5439,7 +5439,7 @@ export const questionsData = [
         "בזמן בדיקת המערכת הסטטית יש לחבר לחץ",
         "מד המהירות מחובר למערכת הפיטו ולמערכת הסטטית",
       ],
-      correctOption: "",
+      correctOption: 3,
       points: 1,
     },
     {
@@ -5452,7 +5452,7 @@ export const questionsData = [
         "75 רגל בשתי דקות",
         "100 רגל בדקה אחת",
       ],
-      correctOption: "",
+      correctOption: 3,
       points: 1,
     },
     {
@@ -5464,14 +5464,14 @@ export const questionsData = [
         'צמצם מורכב בד"כ על קו כניסת האוויר לאופק המלאכותי',
         'אם קו כניסת האוויר לכל מכשיר מחובר לקו אטמוספרי משותף, יש בד"כ מסנן לכל מכשיר',
       ],
-      correctOption: "",
+      correctOption: 1,
       points: 1,
     },
     {
       question: "מד גובה מכויל ל-29.92 אינטש כספית על הקרקע. מד הגובה יקרא את:",
       num: "80מכשירים",
       options: ["גובה הלחץ", "גובה הצפיפות", "גובה השדה", "גובה אמיתי"],
-      correctOption: "",
+      correctOption: 0,
       points: 1,
     },
     {
@@ -5500,7 +5500,7 @@ export const questionsData = [
         "לחץ של 14.7 אינטש",
         "לגובה השדה",
       ],
-      correctOption: "",
+      correctOption: 0,
       points: 1,
     },
     {
@@ -5512,7 +5512,7 @@ export const questionsData = [
         "הזווית בין ציר האורך של המטוס לקו האופק בזמן גלישה",
         "הצורך בתיקון בעלרוד או נטיה כאשר המטוס סוטה מנתיבו",
       ],
-      correctOption: "",
+      correctOption: 1,
       points: 1,
     },
     {
@@ -5524,7 +5524,7 @@ export const questionsData = [
         "חיבורים וכבלים חשמליים",
         "תיווך אויר- אין חיבורים בין משדר למקלט סינכרו",
       ],
-      correctOption: "",
+      correctOption: 2,
       points: 1,
     },
     {
@@ -5537,7 +5537,7 @@ export const questionsData = [
         "מקבילה לזוית ההכוונה של המטוס",
         "מקבילה לציר האורך של המטוס",
       ],
-      correctOption: "",
+      correctOption: 0,
       points: 1,
     },
     {
@@ -5549,7 +5549,7 @@ export const questionsData = [
         "באמצעים חזותיים",
         "באמצעות נוזלים בלחץ",
       ],
-      correctOption: "",
+      correctOption: 1,
       points: 1,
     },
     {
@@ -5561,7 +5561,7 @@ export const questionsData = [
         "תחנת תיקון מאושרת לסוג זה של מטוס",
         "מכונאי בעל רשיון ובידו גם אישור מבקר",
       ],
-      correctOption: "",
+      correctOption: 1,
       points: 1,
     },
     {
@@ -5573,7 +5573,7 @@ export const questionsData = [
         "לחץ הפרשי מתוקן",
         "הלחץ האטמוספרי הקיים",
       ],
-      correctOption: "",
+      correctOption: 3,
       points: 1,
     },
     {
@@ -5586,7 +5586,7 @@ export const questionsData = [
         "רק משפט 2 נכון",
         "משפטים 1 ו-2 אינם נכונים",
       ],
-      correctOption: "",
+      correctOption: 0,
       points: 1,
     },
     {
@@ -5598,7 +5598,7 @@ export const questionsData = [
         "במרחקים של 2 רגל",
         "במרחקים של 3 רגל",
       ],
-      correctOption: "",
+      correctOption: 2,
       points: 1,
     },
     {
@@ -5610,7 +5610,7 @@ export const questionsData = [
         "ארבע פעמים קוטר הכבל",
         "עשר פעמים קוטר הכבל",
       ],
-      correctOption: "",
+      correctOption: 3,
       points: 1,
     },
     {
@@ -5622,7 +5622,7 @@ export const questionsData = [
         "באמצעות רצועות חיזוק משני עברי גוף המטוס",
         "כך שהעומסים שיווצרו יועברו לגוף המטוס",
       ],
-      correctOption: "",
+      correctOption: 3,
       points: 1,
     },
     {
@@ -5634,7 +5634,7 @@ export const questionsData = [
         "למניעת בריחת דיחוס מהמטוס",
         "למניעת שיתוך בין האנטנה וגוף המטוס",
       ],
-      correctOption: "",
+      correctOption: 0,
       points: 1,
     },
     {
@@ -5647,7 +5647,7 @@ export const questionsData = [
         'הפעלת המנוע בכל סל"ד נדרש בתוך הטווח שלו',
         "הפעלת המנוע בכיוונים מנוגדים",
       ],
-      correctOption: "",
+      correctOption: 3,
       points: 1,
     },
     {
@@ -5660,7 +5660,7 @@ export const questionsData = [
         "המזח יפתח וישאר פתוח כל הזמן",
         "מתח הגנרטור יעלה",
       ],
-      correctOption: "",
+      correctOption: 0,
       points: 1,
     },
     {
@@ -5672,7 +5672,7 @@ export const questionsData = [
         "כוח פיתול התחלתי נמוך",
         'הסל"ד עולה כאשר העומס יורד',
       ],
-      correctOption: "",
+      correctOption: 0,
       points: 1,
     },
   ],
@@ -5689,7 +5689,7 @@ export const questionsData = [
         "אשר אחד מהם עשוי חומר מוליך והשני חומר מבדד.",
         "עשויים חומר דיאלקטרי.",
       ],
-      correctOption: 2,
+      correctOption: 0,
       points: 1,
     },
     {
@@ -5727,7 +5727,7 @@ export const questionsData = [
         "\\text { דרפוקיפ } 10^{10} ", // 10^10 as 10 in power of 10
         "\\text{ דרפוקיפ } 10^{12}", // 10^12 as 10 in power of 12
       ],
-      correctOption: 2,
+      correctOption: 1,
       points: 1,
     },
     {
@@ -5739,7 +5739,7 @@ export const questionsData = [
         "1200 מיקרופרד.",
         "1.2 קולון-לוולט.",
       ],
-      correctOption: 1,
+      correctOption: 3,
       points: 1,
     },
     {
@@ -5751,7 +5751,7 @@ export const questionsData = [
         "ישר למתח וביחס הפוך לקיבול",
         "ישר לקיבול וביחס הפוך למתח.",
       ],
-      correctOption: 2,
+      correctOption: 0,
       points: 1,
     },
     {
@@ -5791,6 +5791,291 @@ export const questionsData = [
         "סוג החומר, שממנו עשויים הלוחות.",
       ],
       correctOption: 0,
+      points: 1,
+    },
+    {
+      question: "קיבולו של קבל תלוי ב-:",
+      num: "יח'12",
+      options: [
+        "חוזק הדיאלקטרי של המבדד",
+        "התנגדות הסגולית של החומר הדיאלקטרי",
+        "חלחלות החשמלית של החומר הדיאלקטרי",
+        "משקל הסגולי של החומר הדיאלקטרי",
+      ],
+      correctOption: 2,
+      points: 1,
+    },
+    {
+      question: "קיבולו של קבל תלוי ב-:",
+      num: "קבלים13",
+      options: [
+        "מוליכות לוחות המתכת",
+        "עובי לוחות המתכת",
+        "שטח פני לוחות המתכת",
+        "סוג החומר ממנו עשויים הלוחות",
+      ],
+      correctOption: 2,
+      points: 1,
+    },
+    {
+      question: "קיבולו של קבל נמצא ביחס:",
+      num: "קבלים14",
+      options: [
+        "ישר לעובי לוחות המתכת",
+        "הפוך לעובי לוחות המתכת",
+        "ישר למרחק בין הלוחות",
+        "הפוך למרחק בין הלוחות",
+      ],
+      correctOption: 3,
+      points: 1,
+    },
+    {
+      question: " קיבולו של קבל נמצא ביחס: ישר לי:",
+      num: "קבלים15",
+      options: [
+        "שטח פני הלוחות",
+        "עובי הלוחות",
+        "מרחק בין הלוחות",
+        "ריבוע המרחק בין הלוחות",
+      ],
+      correctOption: 0,
+      points: 1,
+    },
+    {
+      question: "קיבולו של קבל אינו תלוי ב-:",
+      num: "קבלים16",
+      options: [
+        "שטח פני לוחות המצת",
+        "חומר, ממנו עשויים הלוחות",
+        "סוג החומר הדיאלקטרי",
+        "עובי של החומר הדיאלקטרי",
+      ],
+      correctOption: 1,
+      points: 1,
+    },
+    {
+      question: "כדי להגדיל קיבולו של קבל עלינו:",
+      num: "קבלים17",
+      options: [
+        "לקרב זה לזה את לוחות המתכת",
+        "להרחיק זה מזה את לוחות המתכת",
+        "להגדיל את העובי של לוחות המתכת",
+        "לבחור בלוחות בעלי התנגדות נמוכה",
+      ],
+      correctOption: 0,
+      points: 1,
+    },
+    {
+      question: "המימד של החלחלות החשמלית של חומר דיאלקטרי",
+      num: "קבלים18",
+      options: ["קולון ל-מ", "וולט ל-מ", "פרד ל-מ", "קולון ל-מר"],
+      correctOption: 2,
+      points: 1,
+    },
+    {
+      question:
+        "אם התלות החשמלית החשמלית היחסית של נייר היא 5, הרי על ידי הכנסת נייר בין הלוחות של קבל אוויר:",
+      num: "קבלים19",
+      options: [
+        "מקטינים קיבולו פי 5",
+        "מגדילים את קיבולו פי 5",
+        "מקטינים את החוזק הדיאלקטרי פי 5",
+        "מגדילים את החוזק הדיאלקטרי פי 5",
+      ],
+      correctOption: 1,
+      points: 1,
+    },
+    {
+      question:
+        "בין לוחות של קבל אוויר שורר מתח (U). אם נכניס בין הלוחות חומר דיאלקטרי, חומר מבדד מבלי לשנות את המתח:",
+      num: "קבלים20",
+      options: [
+        "נגדיל את מטען הקבל",
+        "נקטין את מטען הקבל",
+        "לא ישתנה מטען הקבל בהיותו תלוי רק במתח",
+        "לא ניתן לשמור על אותו המתח, אם נכניס מבדד בין הלוחות",
+      ],
+      correctOption: 0,
+      points: 1,
+    },
+    {
+      question: "קבל בעל בידוד אוויר נטען למתח 100 וולט. לאחר ניתוק הקבל :",
+      num: "קבלים21",
+      options: ["50 וולט", "100 וולט", "200 וולט", "אפס"],
+      correctOption: 2,
+      points: 1,
+    },
+    {
+      question: "זרם זליגה בקבל:",
+      num: "קבלים22",
+      options: [
+        "מקטין את הקיבול",
+        "מגדיל את ההתנגדות של החומר הדיאלקטרי",
+        "מונע הריסת החומר הדיאלקטרי",
+        "מונע אגירת מטען לאורך זמן",
+      ],
+      correctOption: 3,
+      points: 1,
+    },
+    {
+      question: "הפסדים דיאלקטריים בקבלים נובעים מ-:",
+      num: "קבלים23",
+      options: [
+        "התנגדות האומית של חומר הדיאלקטרי",
+        "המרחק הגדול יחסית שבין הלוחות",
+        "זה שהקבל משמש כנתק בזרם ישר",
+        "תופעת הזזה בחומרים דיאלקטריים",
+      ],
+      correctOption: 3,
+      points: 1,
+    },
+    {
+      question: "האנרגיה האגורה בקבל טעון נמצאת ביחס:",
+      num: "קבלים24",
+      options: [
+        "ישר למטען וביחס הפוך למתח",
+        "ישר למתח וביחס הפוך למטען",
+        "ישר למתח ולמטען",
+        "הפוך למתח ולמטען",
+      ],
+      correctOption: 2,
+      points: 1,
+    },
+    {
+      question: "זמן הטעינה של קבל:",
+      num: "קבלים25",
+      options: [
+        "נמצא ביחס ישר לקיבול הקבל",
+        "נמצא ביחס להפוך ההתנגדות המחוברת בטור לקבל",
+        "נמצא ביחס הפוך לקיבול הקבל",
+        "תלוי אך ורק במתח המקור",
+      ],
+      correctOption: 0,
+      points: 1,
+    },
+    {
+      question:
+        "קבוע הזמן של מעגל, הכולל קבל, מציין תוך זמן כמה ייטען הקבל לכ-:",
+      num: "קבלים27",
+      options: ["100% ממתחו", "63% ממתחו", "50% ממתחו", "36% ממתחו"],
+      correctOption: 1,
+      points: 1,
+    },
+    {
+      question: "המתחים בין הדקי קבלים המחוברים במקביל יהיו:",
+      num: "קבלים31",
+      options: ["שווים", "נמוכים", "תלויים בקיבולי הקבל", "תלויים במטעני הקבל"],
+      correctOption: 0,
+      points: 1,
+    },
+    {
+      question: "בחיבור קבלים במקביל - המטען:",
+      num: "קבלים32",
+      options: [
+        "שווה בכל הקבלים",
+        "הנמוך נמצא בקבל בעל הקיבול הגדול ביותר",
+        "הגבוה נמצא בקבל בעל הקיבול הגדול ביותר",
+        "הגבוה נמצא בקבל בעל הקיבול הקטן ביותר",
+      ],
+      correctOption: 3,
+      points: 1,
+    },
+    {
+      question: "בחיבור קבלים במקביל:",
+      num: "קבלים33",
+      options: [
+        "המטען בכל קבל אינו תלוי במטעני יתר הקבלים",
+        "המטען בכל קבל תלוי במטעני יתר הקבלים",
+        "ככל שמספר הקבלים גדול יותר, כך תלך ותגדל התלות",
+        "כל התשובות אינן נכונות",
+      ],
+      correctOption: 0,
+      points: 1,
+    },
+    {
+      question: "בתיאור קבלים במקביל:",
+      num: "קבלים34",
+      options: [
+        "כל קבל נוסף מקטין את הקיבול השקול",
+        "כל קבל נוסף מגדיל את הקיבול השקול",
+        "קבל נוסף בעל קיבול גדול מגדיל את הקיבול השקול, וקבל נוסף בעל קיבול נמוך מקטין את הקיבול השקול",
+        "קבל נוסף בעל קיבול גדול מקטין את הקיבול השקול, וקבל נוסף בעל קיבול נמוך מגדיל את הקיבול השקול",
+      ],
+      correctOption: 1,
+      points: 1,
+    },
+    {
+      question: "בחיבור קבלים במקביל יהיה הקיבול השקול:",
+      num: "קבלים35",
+      options: [
+        "שווה לסכום הקיבולים",
+        "קטן מהקיבול של בעל הקיבול הקטן ביותר",
+        "גדול מהקיבול של בעל הקיבול הקטן ביותר, אך קטן מהקיבול של הקבל בעל הקיבול הגדול ביותר",
+        "תלוי במתח המקור",
+      ],
+      correctOption: 0,
+      points: 1,
+    },
+    {
+      question: "המתחים, בין הדקי קבלים המחוברים בטור, יהיו:",
+      num: "קבלים39",
+      options: ["שווים", "נמוכים", "תלויים בקיבולי הקבל", "תלויים במטעני הקבל"],
+      correctOption: 2,
+      points: 1,
+    },
+    {
+      question: "בחיבור קבלים בטור, המטען:",
+      num: "קבלים40",
+      options: [
+        "שווה בכל הקבלים",
+        "הנמוך נמצא בקבל בעל הקיבול הגדול ביותר",
+        "הגבוה נמצא בקבל בעל הקיבול הגדול ביותר",
+        "הגבוה נמצא בקבל בעל הקיבול הקטן ביותר",
+      ],
+      correctOption: 0,
+      points: 1,
+    },
+    {
+      question: "בחיבור קבלים בטור, יהיה הקיבול השקול:",
+      num: "קבלים41",
+      options: [
+        "שווה לסכום הקיבולים",
+        "קטן מהקיבול של בעל הקיבול הקטן ביותר",
+        "גדול מהקיבול של הקבל בעל הקיבול הגדול ביותר",
+        "תלוי במתח המקור",
+      ],
+      correctOption: 1,
+      points: 1,
+    },
+    {
+      question: "על-ידי חיבור קבלים בטור אנו מגדילים את:",
+      num: "קבלים42",
+      options: ["המתח המותר", "הזרם המותר", "הקיבול", "המטען"],
+      correctOption: 0,
+      points: 1,
+    },
+    {
+      question: "על-ידי חיבור קבלים בטור:",
+      num: "קבלים43",
+      options: [
+        "מגדילים את הקיבול השקול",
+        "מגדילים את הכושר לצבור מטענים",
+        "מגדילים את זמן הטעינה",
+        "מקטינים את זמן הטעינה",
+      ],
+      correctOption: 3,
+      points: 1,
+    },
+    {
+      question: "בתיאור קבלים בטור, הקיבול השקול:",
+      num: "קבלים44",
+      options: [
+        "שווה לסכום הקיבולים",
+        "קטן מהקיבול של כל קבל בסוללה",
+        "קטן מהקיבול של הקבל בעל הקיבול הנמוך ביותר",
+        "שווה לסכום הערכים ההפוכים של קיבולי הקבלים",
+      ],
+      correctOption: 2,
       points: 1,
     },
   ],
