@@ -15,15 +15,35 @@ function StartScreen() {
   const categoryButtons = useMemo(() => {
     if (!categories || categories.length === 0) return null;
 
-    return categories.map((category, index) => (
-      <button
-        key={index}
-        className="btn btn-ui"
-        onClick={() => handleCategorySelect(index)}
-      >
-        {index + 1 === 17 ? "מכשירים א" : index + 1 + " פרק "}
-      </button>
-    ));
+    return categories.map((category, index) => {
+      let buttonText;
+      switch (index + 1) {
+        case 17:
+          buttonText = "מכשירים א";
+          break;
+        case 18:
+          buttonText = "מכשירים ב";
+          break;
+        case 19:
+          buttonText = "מכשירים ג";
+          break;
+        case 20:
+          buttonText = "קבלים";
+          break;
+        default:
+          buttonText = `${index + 1} פרק `;
+      }
+
+      return (
+        <button
+          key={index}
+          className="btn btn-ui"
+          onClick={() => handleCategorySelect(index)}
+        >
+          {buttonText}
+        </button>
+      );
+    });
   }, [categories, handleCategorySelect]);
 
   if (status !== "categoriesReady") return null;
