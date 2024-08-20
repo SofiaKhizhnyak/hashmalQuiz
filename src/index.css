@@ -169,6 +169,21 @@ progress {
   border: 2px solid var(--color-accent); */
   color: var(--color-darkest);
 }
+.button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.btn-next {
+  margin-left: auto;
+}
+.btn-previous {
+  margin-right: auto;
+  margin-left: 0;
+}
+.btn-change {
+  margin: auto;
+}
 
 .answer {
   background-color: var(--color-wrong);

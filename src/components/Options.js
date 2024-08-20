@@ -1,8 +1,9 @@
 import { useQuiz } from "../contexts/QuizContext";
+import ChangeAnswerButton from "./ChangeAnswerButton";
 import MathJax from "./MathJax";
 
 function Options({ question }) {
-  const { dispatch, answer } = useQuiz();
+  const { dispatch, answer, canChangeAnswer } = useQuiz();
   const hasAnswered = answer !== null;
 
   const renderOption = (option) => {
@@ -22,28 +23,30 @@ function Options({ question }) {
   };
 
   return (
-    <div style={{ direction: "rtl", textAlign: "right" }}>
-      <div className="options">
-        {question.options.map((option, index) => (
-          <button
-            className={`to-right btn btn-option ${
-              index === answer ? "answer" : ""
-            } ${
-              hasAnswered
-                ? index === question.correctOption
-                  ? "correct"
-                  : "wrong"
-                : ""
-            }`}
-            key={crypto.randomUUID()}
-            disabled={hasAnswered}
-            onClick={() => dispatch({ type: "newAnswer", payload: index })}
-          >
-            {renderOption(option)}
-          </button>
-        ))}
+    <>
+      <div style={{ direction: "rtl", textAlign: "right" }}>
+        <div className="options">
+          {question.options.map((option, index) => (
+            <button
+              className={`to-right btn btn-option ${
+                index === answer ? "answer" : ""
+              } ${
+                hasAnswered
+                  ? index === question.correctOption
+                    ? "correct"
+                    : "wrong"
+                  : ""
+              }`}
+              key={crypto.randomUUID()}
+              disabled={hasAnswered && !canChangeAnswer}
+              onClick={() => dispatch({ type: "newAnswer", payload: index })}
+            >
+              {renderOption(option)}
+            </button>
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 function isValidImageUrl(url) {

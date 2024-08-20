@@ -15,6 +15,7 @@ const initialState = {
   secondsRemaining: null,
   selectedCategory: null,
   categories: [],
+  canChangeAnswer: false,
 };
 
 function reducer(state, action) {
@@ -33,11 +34,15 @@ function reducer(state, action) {
       const question = state.questions[state.index];
       return {
         ...state,
+        questions: state.questions.map((q, idx) =>
+          idx === state.index ? { ...q, userAnswer: action.payload } : q
+        ),
         answer: action.payload,
         points:
           action.payload === question.correctOption
             ? state.points + question.points
             : state.points,
+        /* canChangeAnswer: false, */
       };
     case "nextQuestion":
       return { ...state, index: state.index + 1, answer: null };
@@ -49,6 +54,19 @@ function reducer(state, action) {
           state.points > state.highscore ? state.points : state.highscore,
       };
 
+    case "previousQuestion":
+      return {
+        ...state,
+        index: state.index > 0 ? state.index - 1 : state.index,
+        answer: state.questions[state.index - 1]?.userAnswer ?? null,
+        /* canChangeAnswer: true, */
+      };
+
+    /* case "allowChangeAnswer":
+      return {
+        ...state,
+         canChangeAnswer: true,  // Enable changing the answer when requested
+      }; */
     case "tick":
       return {
         ...state,
@@ -85,6 +103,7 @@ function QuizProvider({ children }) {
       secondsRemaining,
       selectedCategory,
       categories,
+      canChangeAnswer,
     },
     dispatch,
   ] = useReducer(reducer, initialState);
@@ -152,6 +171,7 @@ function QuizProvider({ children }) {
         categories,
         numQuestions,
         maxPossiblePoints,
+        canChangeAnswer,
       }}
     >
       {children}
