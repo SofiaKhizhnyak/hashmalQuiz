@@ -1,4 +1,4 @@
-import React, { createContext, useEffect, useContext, useReducer } from "react";
+import { createContext, useContext, useReducer, useEffect } from "react";
 import { questionsData } from "./questions";
 
 const QuizContext = createContext();
