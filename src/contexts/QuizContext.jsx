@@ -32,6 +32,7 @@ function reducer(state, action) {
       };
     case "newAnswer":
       const question = state.questions[state.index];
+      const alreadyAnswered = question.userAnswer !== undefined;
       return {
         ...state,
         questions: state.questions.map((q, idx) =>
@@ -39,13 +40,18 @@ function reducer(state, action) {
         ),
         answer: action.payload,
         points:
-          action.payload === question.correctOption
+          !alreadyAnswered && action.payload === question.correctOption
             ? state.points + question.points
             : state.points,
         /* canChangeAnswer: false, */
       };
     case "nextQuestion":
-      return { ...state, index: state.index + 1, answer: null };
+      const nextIndex = state.index + 1;
+      return {
+        ...state,
+        index: nextIndex,
+        answer: state.questions[nextIndex]?.userAnswer ?? null,
+      };
     case "finish":
       return {
         ...state,
@@ -55,11 +61,11 @@ function reducer(state, action) {
       };
 
     case "previousQuestion":
+      const prevIndex = state.index - 1;
       return {
         ...state,
-        index: state.index > 0 ? state.index - 1 : state.index,
-        answer: state.questions[state.index - 1]?.userAnswer ?? null,
-        /* canChangeAnswer: true, */
+        index: prevIndex > 0 ? prevIndex : 0,
+        answer: state.questions[prevIndex]?.userAnswer ?? null, // Set the answer to the user's previous answer
       };
 
     /* case "allowChangeAnswer":
