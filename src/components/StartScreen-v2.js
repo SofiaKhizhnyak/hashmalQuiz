@@ -30,6 +30,9 @@ function StartScreen() {
         case 20:
           buttonText = "קבלים";
           break;
+        case 21:
+          buttonText = "חישובים";
+          break;
         default:
           buttonText = `${index + 1} פרק `;
       }
