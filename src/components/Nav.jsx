@@ -2,11 +2,9 @@ import React from "react";
 import NextButton from "./NextButton";
 import PreviousButton from "./PreviousButton";
 import { useQuiz } from "../contexts/QuizContext";
-import ChangeAnswerButton from "./ChangeAnswerButton";
 
-function Footer() {
-  const { index, numQuestions, answer, canChangeAnswer } = useQuiz();
-  const hasAnswered = answer !== null;
+function Nav() {
+  const { index, numQuestions } = useQuiz();
 
   return (
     <div className="button-wrapper">
@@ -21,4 +19,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default Nav;

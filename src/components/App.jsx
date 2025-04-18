@@ -5,19 +5,33 @@ import Loader from "./Loader";
 import Error from "./Error";
 import StartScreen from "./StartScreen-v2";
 import Question from "./Question";
-import NextButton from "./NextButton";
 import Progress from "./Progress";
 import FinishScreen from "./FinishScreen";
-import PreviousButton from "./PreviousButton";
-
-import Footer from "./Footer";
+import Nav from "./Nav";
 import { useQuiz } from "../contexts/QuizContext";
+import Footer from "./Footer";
+import GoHomeButton from "./GoHomeButton";
+import LogoutButton from "./LogoutButton";
 
 export default function App() {
   const { status } = useQuiz();
   return (
     <div className="app">
-      <Header />
+      <div style={{ display: "flex" }}>
+        <Header />
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            rowGap: "10px",
+            opacity: 0.7,
+            justifyContent: "center",
+          }}
+        >
+          <GoHomeButton />
+          <LogoutButton />
+        </div>
+      </div>
       <Main>
         {status === "loading" && <Loader />}
         {status === "dataFailed" && <Error />}
@@ -26,11 +40,12 @@ export default function App() {
           <>
             <Progress />
             <Question />
-            <Footer />
+            <Nav />
           </>
         )}
         {status === "finished" && <FinishScreen />}
       </Main>
+      <Footer />
     </div>
   );
 }
