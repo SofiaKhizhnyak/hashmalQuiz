@@ -1,5 +1,4 @@
 import { useQuiz } from "../contexts/QuizContext";
-import ChangeAnswerButton from "./ChangeAnswerButton";
 import MathJax from "./MathJax";
 
 function Options({ question }) {
