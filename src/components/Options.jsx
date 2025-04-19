@@ -1,9 +1,15 @@
+import { useEffect, useState } from "react";
 import { useQuiz } from "../contexts/QuizContext";
 import MathJax from "./MathJax";
 
 function Options({ question }) {
   const { dispatch, answer, canChangeAnswer } = useQuiz();
   const hasAnswered = answer !== null;
+  const [key, setKey] = useState(Date.now());
+
+  useEffect(() => {
+    setKey(Date.now());
+  }, [question.question]);
 
   const renderOption = (option) => {
     if (isValidImageUrl(option)) {
@@ -23,7 +29,7 @@ function Options({ question }) {
 
   return (
     <>
-      <div style={{ direction: "rtl", textAlign: "right" }}>
+      <div style={{ direction: "rtl", textAlign: "right" }} key={key}>
         <div className="options">
           {question.options.map((option, index) => (
             <button
@@ -36,7 +42,7 @@ function Options({ question }) {
                     : "wrong"
                   : ""
               }`}
-              key={option}
+              key={index}
               disabled={hasAnswered && !canChangeAnswer}
               onClick={() => dispatch({ type: "newAnswer", payload: index })}
               style={{

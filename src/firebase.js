@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBH2ZRIyDXej1kUiE85wLgLfo2Pp6Ifz7k",
-  authDomain: "the-hashmal-quiz.firebaseapp.com",
-  projectId: "the-hashmal-quiz",
-  storageBucket: "the-hashmal-quiz.firebasestorage.app",
-  messagingSenderId: "416126778544",
-  appId: "1:416126778544:web:01963381a9f770dc600f75",
-  measurementId: "G-XLGBXK7JDB",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
 };
 
 const app = initializeApp(firebaseConfig);
