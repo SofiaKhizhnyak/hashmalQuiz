@@ -36,9 +36,14 @@ function Options({ question }) {
                     : "wrong"
                   : ""
               }`}
-              key={crypto.randomUUID()}
+              key={option}
               disabled={hasAnswered && !canChangeAnswer}
               onClick={() => dispatch({ type: "newAnswer", payload: index })}
+              style={{
+                transition: "all 0.3s ease",
+                transform:
+                  index === answer ? "translateX(-2rem)" : "translateX(0)",
+              }}
             >
               {renderOption(option)}
             </button>

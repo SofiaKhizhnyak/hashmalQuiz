@@ -13,7 +13,7 @@ function GoHomeButton() {
     <button
       className="my-button go-home-button"
       onClick={handleClick}
-      title="Restart quiz"
+      title="Quit quiz and go to start screen"
     >
       <HiOutlineHome />
     </button>

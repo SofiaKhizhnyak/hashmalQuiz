@@ -20,9 +20,7 @@ export function AuthProvider({ children }) {
   const navigate = useNavigate();
   const location = useLocation();
 
-  // Set up auth persistence and state listener on component mount
   useEffect(() => {
-    // First, ensure persistence is set to local
     setPersistence(auth, browserLocalPersistence)
       .then(() => {
         console.log("Auth persistence set to local");
@@ -31,7 +29,6 @@ export function AuthProvider({ children }) {
         console.error("Error setting persistence:", error);
       });
 
-    // Then set up the auth state listener
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
       setIsLoading(false);
@@ -67,11 +64,9 @@ export function AuthProvider({ children }) {
     }
   };
 
-  // Handle route protection separately
   useEffect(() => {
     const protectedRoutes = ["/"];
 
-    // Only redirect if auth is initialized and not loading
     if (authInitialized && !isLoading) {
       if (!user && protectedRoutes.includes(location.pathname)) {
         navigate("/login");

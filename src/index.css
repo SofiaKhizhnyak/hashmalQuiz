@@ -160,6 +160,8 @@ progress {
 .btn-option {
   width: 100%;
   text-align: right;
+  transition: all 0.3s ease;
+  transform: translateX(0);
 }
 
 .btn-option.correct {
@@ -172,6 +174,11 @@ progress {
   border: 2px solid var(--color-accent); */
   color: var(--color-darkest);
 }
+
+.btn-option:not([disabled]):hover {
+  transform: translateX(1.2rem);
+}
+
 .button-wrapper {
   display: flex;
   justify-content: space-between;
@@ -190,7 +197,6 @@ progress {
 
 .answer {
   background-color: var(--color-wrong);
-  transform: translateX(-2rem);
 }
 
 .result {
@@ -443,6 +449,7 @@ progress {
 }
 
 .footer {
+  height: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -451,12 +458,16 @@ progress {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 1rem;
+  padding: 0.2rem;
   background-color: var(--color-darkest);
   color: #d1d1d18f;
   font-size: 1.3rem;
   font-family: "Poppins", sans-serif;
   z-index: 100;
+  opacity: 0.7;
+}
+.footer:hover {
+  opacity: 1;
 }
 
 .footer-text {
@@ -511,6 +522,13 @@ progress {
 
   .btn-option {
     font-size: 1.2rem; /* Adjust as needed */
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .answer {
+    background-color: var(--color-wrong);
   }
 
   img {

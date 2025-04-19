@@ -4,9 +4,7 @@ import { FaLinkedin } from "react-icons/fa";
 function Footer() {
   return (
     <footer className="footer">
-      <p className="footer-text">
-        This quiz app was created by Sofia Khizhnyak
-      </p>
+      <p className="footer-text">This app was created by Sofia Khizhnyak</p>
       <a
         href="https://www.linkedin.com/in/sofiakhizhnyak/"
         target="_blank"

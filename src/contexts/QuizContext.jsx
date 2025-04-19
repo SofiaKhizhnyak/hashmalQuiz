@@ -65,7 +65,8 @@ function reducer(state, action) {
       return {
         ...state,
         index: prevIndex > 0 ? prevIndex : 0,
-        answer: state.questions[prevIndex]?.userAnswer ?? null, // Set the answer to the user's previous answer
+        answer: state.questions[prevIndex]?.userAnswer ?? null,
+        /* If there is a userAnswer (even if it's false, 0, or ""), keep it. If the answer undefined or null, then use null instead */
       };
 
     /* case "allowChangeAnswer":
